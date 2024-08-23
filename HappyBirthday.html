@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Angela!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <div class="header-buttons">
+                <a href="register-gpl.html" class="header-button">Register Yourself for GPL</a>
+                <a href="register-party.html" class="header-button">Register Yourself for Party</a>
+                <a href="add-wishes.html" class="header-button">Tap to Add Your Birthday Wishes</a>
+        </div>
+        <div id="countdown-timer"></div>
+        <div id="cracker" class="hidden">
+            <img id="cracker-gif" src="Cracker_gif.gif" alt="Birthday Cracker" />
+        </div>
+    </header>
+    <section id="photo-gallery">
+        <h2>Memories</h2>
+        <div class="gallery">
+            <img src="Memory_1.jpg" alt="Memory 1">
+            <img src="Memory_2.jpg" alt="Memory 2">
+            <img src="Memory_3.jpg" alt="Memory 3">
+            <img src="Memory_4.jpg" alt="Memory 4">
+            <img src="Memory_5.jpg" alt="Memory 5">
+            <img src="Memory_6.jpg" alt="Memory 6">
+        </div>
+    </section>
+    <section id="message-wall">
+        <h2>Messages</h2>
+        
+        <div class="message-form">
+            <textarea id="message-input" placeholder="Write your message..."></textarea>
+            <input type="file" id="media-input" accept="image/*,video/*">
+            <button onclick="addMessage()">Post</button>
+        </div>
+        <div class="messages" id="messages">
+            
+        </div>
+    </section>
+    <section id="timeline">
+        <h2>Your Journey</h2>
+        
+        <div class="timeline">
+            <div class="timeline-event">
+                <div class="timeline-content">
+                    <h3>Graduation Day</h3>
+                    <p>The culmination of years of hard work and dedication, this day marked the completion of your friend's undergraduate studies. Dressed in a cap and gown, surrounded by family and friends, your friend received their diploma and celebrated this significant academic milestone with a joyous ceremony.</p>
+                    <span>June 15, 2018</span>
+                </div>
+            </div>
+            <div class="timeline-event center">
+                <div class="timeline-content">
+                    <h3>First Job</h3>
+                    <p>Your friend's first step into the professional world. They landed a job at a prestigious company and embarked on their career journey. This job not only provided financial independence but also a platform to develop new skills, grow professionally, and make lasting friendships with colleagues.</p>
+                    <span>September 1, 2019</span>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-content">
+                    <h3>Memorable Vacation</h3>
+                    <p>A memorable trip to the beautiful beaches of Bali. This vacation was a much-needed break from the hustle and bustle of everyday life. Your friend enjoyed the serene beaches, explored local culture, and created unforgettable memories with loved ones. It was a time of relaxation, adventure, and bonding.</p>
+                    <span>July 20, 2020</span>
+                </div>
+            </div>
+            <div class="timeline-event center">
+                <div class="timeline-content">
+                    <h3>Launch of Personal Project</h3>
+                    <p>The launch of a passion project that your friend had been working on for months. Whether it was a blog, a small business, or a creative endeavor, this project was a testament to your friend's creativity, determination, and entrepreneurial spirit. The launch was a proud moment, celebrated with supportive friends and family.</p>
+                    <span>March 5, 2022</span>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="wishes-video">
+        <h2>Birthday Wishes</h2>
+        
+        <div class="video-player">
+            <video id="main-video" controls>
+                <source src="Main_video_v2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div id="video-thumbnails">
+                <img src="Thumbnail_1.jpg" alt="Video 1" data-video="Wishes_v1.mp4">
+                <img src="Thumbnail_2.jpg" alt="Video 2" data-video="Wishes_v2.mp4">
+                <img src="Thumbnail_3.jpg" alt="Video 3" data-video="Wishes_v3.mp4">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Made with ❤ by Rupjyoti</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
